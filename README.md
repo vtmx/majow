@@ -1,3 +1,3 @@
 # Majow
 
-Site do gamer Majow.
+O gamer Majowww faz tutoriais e gameplays.
