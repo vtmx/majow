@@ -2,7 +2,7 @@
 
 <div class="slide">
     <div class="slide-item">
-        <a href="#"><img src="https://dummyimage.com/1168x300/222222/656565.png" alt="Slide"></a>
+        <a href="#"><img src="https://dummyimage.com/1168x320/222222/656565.png" alt="Slide"></a>
     </div>
 </div>
 

@@ -1,15 +1,5 @@
 // Navbar
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-bottom: 16px;
-    background: #191919;
-    box-shadow: 0 3px 3px -1px rgba(0,0,0,1), 0 4px 5px 0 rgba(0,0,0,.098), 0 1px 10px 0 rgba(0,0,0,.084);
-}
-
 .navbar {
     position: relative;
     display: flex;
@@ -17,7 +7,10 @@
     min-height: 64px;
 }
 
+// =toggle
+
 .navbar-toggle {
+    display: none;
     position: absolute;
     right: 0;
     width: 48px;
@@ -32,16 +25,25 @@
         cursor: pointer;
     }
 
-    &:active, &:focus {
-        outline: none;
+    &:active {
         background: rgba(255,255,255,.05);
     }
 
-    .icon {
+    i {
         color: #eee;
         font-size: 24px;
     }
+
+    i::before {
+        content: 'menu';
+    }
+
+    i.active::before {
+      content: 'close';
+    }
 }
+
+// =logo
 
 .navbar-logo {
     display: flex;
@@ -58,17 +60,14 @@
         }
 
         &:active {
-            background: rgba(0,0,0,.5);
-        }
-
-        &:focus {
             outline: none;
+            background: rgba(0,0,0,.5);
         }
     }
 
     img {
-        width: 238px;
-        height: 24px;
+        width: 159px;
+        height: 16px;
     }
 }
 
@@ -148,37 +147,54 @@
 
 // =media
 
-@media (max-width: 900px) {
-    .navbar, .menu {
+@media (max-width: 700px) {
+    .navbar {
         display: block;
     }
 
+    // =toggle
+
     .navbar-toggle {
+        display: block;
         top: 8px;
         right: 8px;
     }
 
-    .menu .menu-item, .submenu {
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
         display: block;
+    }
+
+    .menu .menu-item {
+        display: block;
+        margin: 0;
 
         a {
-            margin: 0 0 1px 0;
             padding: 16px;
             height: auto;
+            border-top: 1px solid rgba(0, 0, 0, .5);
 
             i {
                 position: absolute;
                 top: 16px;
                 right: 24px;
             }
+
+            i.active {
+                transform: rotate(180deg);
+            }
         }
-
-
     }
 
+    // Remove line.
     .menu > .current-menu-item::before {
         background: transparent;
     }
+
+    // =submenu
 
     .submenu {
         display: none;
@@ -187,6 +203,21 @@
         position: static;
         width: 100%;
         box-shadow: none;
+
+        .menu-item {
+            a {
+                padding-left: 32px;
+                background: rgba(0, 0, 0, .2);
+            }
+
+            a:hover, a:active {
+                background: rgba(0, 0, 0, .3);
+            }
+        }
+    }
+
+    .submenu.active {
+        display: block;
     }
 
 }
