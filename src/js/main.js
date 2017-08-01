@@ -25,8 +25,8 @@ $(document).ready(function() {
 
         arrows: true,
         appendArrows: $('.slide-arrows'),
-        prevArrow: '<button><i class="material-icons">keyboard_arrow_left</i></button>',
-        nextArrow: '<button><i class="material-icons">keyboard_arrow_right</i></button>',
+        prevArrow: '<button><i class="material-icons md-48">keyboard_arrow_left</i></button>',
+        nextArrow: '<button><i class="material-icons md-48">keyboard_arrow_right</i></button>',
 
         dots: true,
         appendDots: $('.slide-dots')
