@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #141414 url(../img/body-pattern2.png) no-repeat center top;
+    background: #141414 url("../img/body-pattern2.png") no-repeat center top;
     font: 14px Roboto, 'Open Sans', Arial, 'sans-serif';
     line-height: 1;
     color: #bbb;
@@ -15,9 +15,8 @@ body {
     content: '';
     width: 100%;
     height: 100%;
-    // IDEA To fix menu.
-    // padding-top: 80px;
-    background: url(../img/body-pattern.png) fixed;
+    padding-top: 80px;
+    background: url("../img/body-pattern.png") fixed;
 }
 
 ::selection {
@@ -28,14 +27,15 @@ body {
 a {
     text-decoration: none;
     color: #eee;
-    transition: all .2s;
+    transition: all 0.2s;
 }
 
 a:active {
     transition: none;
 }
 
-a:focus, button:focus {
+a:focus,
+button:focus {
     outline: none;
 }
 
@@ -51,11 +51,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-    //IDEA to fix menu.
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     margin-bottom: 16px;
     background: #191919;
     box-shadow: 0 3px 3px -1px rgba(0,0,0,1), 0 4px 5px 0 rgba(0,0,0,.098), 0 1px 10px 0 rgba(0,0,0,.084);
@@ -91,7 +91,14 @@ h1, h2, h3, h4, h5, h6 {
         width: 356px;
         height: 8px;
         margin-left: -178px;
-        background-image: url(../img/footer-highlight.png);
+        background-image: url("../img/footer-highlight.png");
         background-repeat: no-repeat;
     }
+}
+
+// TODO Verificar esse trecho somente na homepage.
+@media (max-width: 700px) {
+    // .body-pattern {
+    //     padding-top: 64px;
+    // }
 }

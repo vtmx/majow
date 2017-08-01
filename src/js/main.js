@@ -1,5 +1,3 @@
-// Main
-//$(window).on('load', function() {
 $(document).ready(function() {
 
     // Toggle menu.
@@ -14,6 +12,24 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).parent().find('.submenu').toggleClass('active');
         $(this).parent().find('i').toggleClass('active');
+    });
+
+
+    // Slick
+
+    $('.slide-container').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 800,
+        adaptiveHeight: true,
+
+        arrows: true,
+        appendArrows: $('.slide-arrows'),
+        prevArrow: '<button><i class="material-icons">keyboard_arrow_left</i></button>',
+        nextArrow: '<button><i class="material-icons">keyboard_arrow_right</i></button>',
+
+        dots: true,
+        appendDots: $('.slide-dots')
     });
 
 });

@@ -8,6 +8,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -399,7 +400,7 @@ template {
   box-sizing: border-box; }
 
 body {
-  background: #141414 url(../img/body-pattern2.png) no-repeat center top;
+  background: #141414 url("../img/body-pattern2.png") no-repeat center top;
   font: 14px Roboto, 'Open Sans', Arial, 'sans-serif';
   line-height: 1;
   color: #bbb; }
@@ -408,7 +409,8 @@ body {
   content: '';
   width: 100%;
   height: 100%;
-  background: url(../img/body-pattern.png) fixed; }
+  padding-top: 80px;
+  background: url("../img/body-pattern.png") fixed; }
 
 ::-moz-selection {
   color: #fff;
@@ -421,16 +423,17 @@ body {
 a {
   text-decoration: none;
   color: #eee;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s; }
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
 
 a:active {
   -webkit-transition: none;
   -o-transition: none;
   transition: none; }
 
-a:focus, button:focus {
+a:focus,
+button:focus {
   outline: none; }
 
 ul {
@@ -443,6 +446,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px; }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   margin-bottom: 16px;
   background: #191919;
   -webkit-box-shadow: 0 3px 3px -1px black, 0 4px 5px 0 rgba(0, 0, 0, 0.098), 0 1px 10px 0 rgba(0, 0, 0, 0.084);
@@ -474,7 +482,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 356px;
     height: 8px;
     margin-left: -178px;
-    background-image: url(../img/footer-highlight.png);
+    background-image: url("../img/footer-highlight.png");
     background-repeat: no-repeat; }
 
 .material-icons {
@@ -534,9 +542,9 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   background: transparent;
   border-radius: 5px;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s; }
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
   .navbar-toggle:hover {
     background: rgba(255, 255, 255, 0.05);
     cursor: pointer; }
@@ -603,7 +611,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 4px;
     width: 100%;
     background: #e45a00; }
-  .menu a:hover, .menu .current-menu-item a {
+  .menu .current-menu-item a, .menu a:hover {
     background: rgba(255, 255, 255, 0.05); }
   .menu a:active {
     background: rgba(0, 0, 0, 0.5); }
@@ -611,9 +619,9 @@ h1, h2, h3, h4, h5, h6 {
 .submenu {
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
   position: absolute;
   z-index: 1;
   width: 240px;
@@ -674,7 +682,7 @@ h1, h2, h3, h4, h5, h6 {
     .submenu .menu-item a {
       padding-left: 32px;
       background: rgba(0, 0, 0, 0.2); }
-    .submenu .menu-item a:hover, .submenu .menu-item a:active {
+    .submenu .menu-item a:active, .submenu .menu-item a:hover {
       background: rgba(0, 0, 0, 0.3); }
   .submenu.active {
     display: block; } }
@@ -689,3 +697,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .gallery {
   margin: 16px; }
+
+.slide {
+  position: relative;
+  overflow: hidden;
+  width: 1168px;
+  height: 320px; }
+  .slide .slide-arrows {
+    position: absolute;
+    bottom: 50%; }
+  .slide .slide-dots {
+    position: absolute;
+    bottom: 0; }

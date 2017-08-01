@@ -18,7 +18,7 @@
         <header class="header">
             <nav class="navbar container">
                 <button class="navbar-toggle" aria-expanded="false">
-                    <i class="material-icons icon"></i>
+                    <i class="material-icons"></i>
                 </button>
 
                 <h1 class="navbar-logo">
@@ -27,13 +27,13 @@
 
                 <ul class="menu">
                     <li class="menu-item current-menu-item"><a href="#">Home</a></li>
-                    <li class="menu-item menu-item-has-children"><a href="#">Youtube <i class="material-icons md-18 icon">arrow_drop_down</i></a>
+                    <li class="menu-item menu-item-has-children"><a href="#">Youtube <i class="material-icons md-18">arrow_drop_down</i></a>
                         <ul class="submenu">
                             <li class="menu-item"><a href="#">Rocket League</a></li>
                             <li class="menu-item"><a href="#">Battlegrounds</a></li>
                         </ul><!-- .submenu -->
                     </li>
-                    <li class="menu-item menu-item-has-children"><a href="#">Twitch <i class="material-icons md-18 icon">arrow_drop_down</i></a>
+                    <li class="menu-item menu-item-has-children"><a href="#">Twitch <i class="material-icons md-18">arrow_drop_down</i></a>
                         <ul class="submenu">
                             <li class="menu-item"><a href="#">Calendario</a></li>
                         </ul><!-- .submenu -->
