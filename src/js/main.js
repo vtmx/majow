@@ -1,22 +1,28 @@
 $(document).ready(function() {
 
+    // Skip content
+    $('.skip-content').on('focusin', function(){
+        $(this).toggleClass('active');
+    }).on('focusout', function() {
+        $(this).toggleClass('active');
+    });
+
     // Toggle menu.
     $('.navbar-toggle').on('click', function(e){
         e.preventDefault();
+        $(this).toggleClass('active');
         $('.menu').toggleClass('active');
-        $(this).find('i').toggleClass('active');
     });
 
     // Toggle submenu.
-    $('.menu-item-has-children a').on('click', function(e){
+    $('.menu-item-has-children > a').on('click', function(e){
         e.preventDefault();
-        $(this).parent().find('.submenu').toggleClass('active');
-        $(this).parent().find('i').toggleClass('active');
+        $(this).parent().find('.sub-menu').toggleClass('active');
+        $(this).parent().toggleClass('active');
     });
 
 
-    // Slick
-
+    // Slick Slider
     $('.slide-container').slick({
         autoplay: true,
         autoplaySpeed: 3000,

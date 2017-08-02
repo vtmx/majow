@@ -27,18 +27,16 @@
         background: rgba(255, 255, 255, .05);
     }
 
-    i {
-        color: #eee;
-        font-size: 24px;
-    }
-
-    i::before {
+    &::before {
         content: 'menu';
+        font-family: 'Material Icons';
+        font-size: 24px;
+        color: #eee;
     }
+}
 
-    i.active::before {
-        content: 'close';
-    }
+.navbar-toggle.active::before {
+    content: 'close';
 }
 
 // =logo
@@ -85,6 +83,7 @@
         }
     }
 
+    // Line
     > .current-menu-item::before {
         content: '';
         position: absolute;
@@ -94,9 +93,13 @@
         background: $color-primary;
     }
 
-    > .menu-item-has-children {}
+    > .menu-item-has-children > a::after {
+        content: 'arrow_drop_down';
+        font-family: 'Material Icons';
+        font-size: 18px;
+    }
 
-    .current-menu-item a, a:hover {
+    > .current-menu-item > a, a:hover {
         background: rgba(255, 255, 255, .05);
     }
 
@@ -104,8 +107,8 @@
         background: rgba(0, 0, 0, .5);
     }
 }
-// =submenu
-.submenu {
+// =sub-menu
+.sub-menu {
     visibility: hidden;
     opacity: 0;
     transition: all 0.2s;
@@ -128,13 +131,13 @@
 }
 
 .menu > .menu-item:hover {
-    .submenu {
+    .sub-menu {
         visibility: visible;
         opacity: 1;
     }
 }
 
-.submenu .submenu {
+.sub-menu .sub-menu {
     display: none;
 }
 
@@ -171,17 +174,17 @@
             padding: 16px;
             height: auto;
             border-top: 1px solid rgba(0, 0, 0, .5);
-
-            i {
-                position: absolute;
-                top: 16px;
-                right: 24px;
-            }
-
-            i.active {
-                transform: rotate(180deg);
-            }
         }
+    }
+
+    .menu-item-has-children a::after {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+    }
+
+    .menu-item.active a::after {
+        transform: rotate(180deg);
     }
 
     // remove line
@@ -189,8 +192,8 @@
         background: transparent;
     }
 
-    // =submenu
-    .submenu {
+    // =sub-menu
+    .sub-menu {
         display: none;
         visibility: visible;
         opacity: 1;
@@ -210,7 +213,7 @@
         }
     }
 
-    .submenu.active {
+    .sub-menu.active {
         display: block;
     }
 

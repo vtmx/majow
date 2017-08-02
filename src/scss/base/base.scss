@@ -77,6 +77,24 @@ h2 {
 
 // =layout
 
+.skip-content {
+	position: absolute;
+	padding: 16px;
+	background: red;
+	top: -48px;
+	left: 8px;
+	z-index: 2;
+	background: #0e0e0e;
+
+	&:focus {
+		box-shadow: 0 0 5px $color-primary;
+	}
+}
+
+.skip-content.active {
+	top: 8px;
+}
+
 // =header
 
 .header {
