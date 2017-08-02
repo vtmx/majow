@@ -1,36 +1,34 @@
 <?php get_header(); ?>
 
-<div class="grid-video padding">
-	<div class="video">
+<div class="video-grid p">
 
-		<div class="video-frame">
-		<!-- <iframe
-				src="https://www.youtube.com/embed/NR7IRaTlPT0"
-				width="752"
-				height="423"
-				frameborder="0"
-				scrolling="no"
-				allowfullscreen>
-			</iframe> -->
+	<?php while ( have_posts() ) : the_post(); ?>
+		<div class="video">
+			<?php $terms = get_the_terms( $post->id, 'streaming' ); ?>
+			<?php foreach( $terms as $term ) {} ?>
+			<?php $tax = $term->slug; ?>
 
-			<iframe
-				src="https://player.twitch.tv/?video=v163146348&autoplay=false"
-				width="752"
-				height="423"
-				frameborder="0"
-				scrolling="no"
-				allowfullscreen>
-			</iframe>
-		</div>
-
-		<div class="video-info">
-			<h2 class="video-title">[01] Jogando RANKED com os Assinantes!!</h2>
-
-			<div class="video-description">
-				Meditativa creancices apresentar dor <a href="#">trabalhado</a> esperancas lei ate dar. Leva nao apre pois mas capa. Os voce soar ii elle diga digo alas. Um ia ar differenca vergonteas qualidades inventario tu inabalavel. Eis perderdes aleijadoe fel espantoso. Carlota ser poderas barbudo cre recusar. Penumbra libertal iv comprido disponha es corrente.
+			<div class="video-frame">
+				<iframe
+					<?php if ( $tax == 'youtube' ): ?>
+						src="https://www.youtube.com/embed/<?php the_field('video-id'); ?>"
+					<?php elseif ( $tax == 'twitch' ): ?>
+						src="https://player.twitch.tv/?video=v<?php the_field('video-id'); ?>&autoplay=false"
+					<?php endif; ?>
+					width="752"
+					height="423"
+					frameborder="0"
+					scrolling="no"
+					allowfullscreen>
+				</iframe>
 			</div>
-		</div>
-	</div><!-- .video -->
+
+			<div class="video-info">
+				<h2 class="video-title"><?php the_title(); ?></h2>
+				<div class="video-description"><?php the_content(''); ?></div>
+			</div>
+		</div><!-- .video -->
+	<?php endwhile; ?>
 
 	<div class="vrelated">
 		<a class="vrelated-item" href="#">

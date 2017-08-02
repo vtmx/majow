@@ -28,8 +28,8 @@
     }
 
     &::before {
-        content: 'menu';
         font-family: 'Material Icons';
+        content: 'menu';
         font-size: 24px;
         color: #eee;
     }
@@ -141,10 +141,68 @@
     display: none;
 }
 
+// =social-links
+
+.social-links {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+
+        &:hover::before {
+            color: #eee;
+        }
+    }
+
+    ::before {
+        font-family: 'Socicon';
+        font-size: 18px;
+        transition: all .2s;
+        color: #999;
+    }
+
+    .youtube::before {
+        content: '\e0a5';
+    }
+
+    .youtube:hover {
+        background: #cc181e;
+    }
+
+    .twitch::before {
+        content: '\e08c';
+    }
+
+    .twitch:hover {
+        background: #4b367c;
+    }
+
+    .steam::before {
+        content: '\e07e';
+    }
+
+    .steam:hover {
+        background: #555;
+    }
+}
+
 
 // =media
 
-@media (max-width: 720px) {
+@media (max-width: 1168px) {
+    .social-links {
+        right: 8px;
+    }
+}
+
+@media (max-width: 768px) {
 
     .navbar {
         display: block;
@@ -217,4 +275,28 @@
         display: block;
     }
 
+    // =social-links
+    .social-links {
+        width: 150px;
+        height: 64px;
+        top: 0;
+        left: 200px;
+
+        a {
+            width: 48px;
+            height: 48px;
+            border-radius: 5px;
+
+            &::before {
+                font-size: 24px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        display: none;
+    }
 }

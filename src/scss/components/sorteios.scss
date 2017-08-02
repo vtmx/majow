@@ -1,0 +1,27 @@
+.sorteios {
+    table {
+        margin: 0;
+    }
+
+    th {
+        padding: 16px;
+    }
+
+    td:nth-child(1) {
+
+    }
+
+    td:nth-child(2) {
+        width: 30%;
+    }
+
+    td:nth-child(3) {
+        width: 12%;
+    }
+
+    h2 {
+        font-size: 48px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

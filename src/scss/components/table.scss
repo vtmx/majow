@@ -1,0 +1,43 @@
+table {
+    width: 100%;
+    height: auto !important;
+    margin-bottom: 16px;
+    border-collapse: collapse;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    border-bottom: 2px solid $color-primary;
+
+    span {
+        color: $color-primary;
+    }
+}
+
+tr {
+    transition: all .1s;
+}
+
+thead tr:hover {
+    background: none;
+    box-shadow: none;
+}
+
+tr:hover {
+    background: #444;
+    background: linear-gradient(to right, #333 0%,#222 100%);
+    box-shadow: 0 0 7px rgba(255, 255, 255, .1);
+    cursor: default;
+}
+
+td, th {
+    padding: 8px;
+    border: 1px solid #191919;
+}
+
+th {
+    background: #424242;
+    background: linear-gradient(#111 0%, #0e0e0e 100%);
+    border-bottom: 2px solid $color-primary;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    font-weight: normal;
+    text-align: left;
+    color: #fff;
+}
