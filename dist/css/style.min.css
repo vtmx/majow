@@ -449,7 +449,13 @@ img, video {
   max-width: 100%;
   height: auto; }
 
-ul {
+hr {
+  height: 1px;
+  margin: 0 0 16px 0;
+  border: none;
+  border-top: 1px solid #ccc; }
+
+ul, ol {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -841,14 +847,19 @@ p {
 .video .video-description {
   line-height: 1.5; }
   .video .video-description a {
-    text-decoration: underline; }
-  .video .video-description a:hover {
     color: #e45a00; }
-  .video .video-description p, .video .video-description ul {
+  .video .video-description a:hover {
+    text-decoration: underline;
+    color: #eee; }
+  .video .video-description p, .video .video-description ul, .video .video-description ol {
     margin-bottom: 16px; }
+  .video .video-description ul, .video .video-description ol {
+    padding-left: 16px; }
   .video .video-description ul {
     list-style-type: square;
     padding-left: 16px; }
+  .video .video-description ol {
+    list-style: decimal; }
 
 .vrelated .vrelated-item {
   display: -webkit-box;
@@ -965,7 +976,7 @@ p {
 .gallery-columns-4 .gallery-item {
   max-width: 272px; }
 
-.pagination {
+.wp-pagenavi {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -975,16 +986,16 @@ p {
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 16px; }
-  .pagination li {
+  .wp-pagenavi a, .wp-pagenavi span {
     margin: 0 4px; }
-  .pagination a, .pagination .current {
+  .wp-pagenavi a, .wp-pagenavi .current {
     display: block;
     padding: 12px 16px;
     background: #191919; }
-  .pagination a:hover, .pagination .current {
+  .wp-pagenavi a:hover, .wp-pagenavi .current {
     background: #e45a00;
     color: #eee; }
-  .pagination a:active {
+  .wp-pagenavi a:active {
     background: #191919; }
 
 .slide {
@@ -1069,7 +1080,7 @@ table {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid #e45a00; }
   table span {
-    color: #e45a00; }
+    color: #f9a573; }
 
 tr {
   -webkit-transition: all .1s;

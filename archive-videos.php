@@ -1,20 +1,12 @@
 <?php get_header(); ?>
-
 <?php
 	// WP_Query arguments
+	// A Paginação é influênciada pelo Admin do Wordpress deixar 24
 	$args = array(
 		'post_type'      => 'videos',
 		'orderby'        => 'date',
-		'paged'          => get_query_var('paged'),
-		'posts_per_page' => 3,
-
-		'tax_query' => array(
-			array(
-				'taxonomy' => 'streaming',
-				'field'    => 'slug',
-				'terms'    => 'twitch'
-			)
-		)
+		'paged'          => $paged,
+		'posts_per_page' => 24,
 	);
 
 	// The Query

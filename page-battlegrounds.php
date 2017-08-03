@@ -10,9 +10,9 @@
 
 		'tax_query' => array(
 			array(
-				'taxonomy' => 'streaming',
+				'taxonomy' => 'video_tag',
 				'field'    => 'slug',
-				'terms'    => 'twitch'
+                'terms'    => 'battlegrounds'
 			)
 		)
 	);

@@ -31,20 +31,29 @@
 		line-height: 1.5;
 
 		a {
-			text-decoration: underline;
-		}
-
-		a:hover {
 			color: $color-primary;
 		}
 
-		p, ul {
+		a:hover {
+			text-decoration: underline;
+			color: #eee;
+		}
+
+		p, ul, ol {
 			margin-bottom: 16px;
+		}
+
+		ul, ol {
+			padding-left: 16px;
 		}
 
 		ul {
 			list-style-type: square;
 			padding-left: 16px;
+		}
+
+		ol {
+			list-style: decimal;
 		}
 	}
 }
