@@ -5,7 +5,8 @@
 	$args = array(
 		'post_type'      => 'videos',
 		'orderby'        => 'date',
-		'paged'          => get_query_var('paged'),
+		'paged'          => $paged,
+		// ou 'paged'    => get_query_var('paged'),
 		'posts_per_page' => 3,
 
 		'tax_query' => array(

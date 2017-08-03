@@ -31,7 +31,11 @@ body {
 
 a {
 	text-decoration: none;
-	color: #eee;
+	color: $color-primary;
+}
+
+a:hover {
+	color: #fff;
 }
 
 a, button {

@@ -5,3 +5,7 @@
 .m {
     magin: 16px;
 }
+
+.align-center {
+    text-align: center;
+}

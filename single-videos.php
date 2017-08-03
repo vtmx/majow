@@ -30,42 +30,40 @@
 		</div><!-- .video -->
 	<?php endwhile; ?>
 
-	<div class="vrelated">
-		<a class="vrelated-item" href="#">
-			<img class="vrelated-img" src="https://dummyimage.com/320x180/222222/656565.png" alt="Vídeo Related">
-			<h3 class="vrelated-title">[Aula 01] O Mapa e Pulando do Avião - PlayerUnknown's Battlegrounds Pulando do Avião</h3>
-		</a>
+	<?php
+		// WP_Query arguments
+		$args = array(
+			'post_type'      => 'videos',
+			'orderby'        => 'date',
+			'paged'          => $paged,
+			'posts_per_page' => 3,
+			'post__not_in'   => array($post->ID),
 
-		<a class="vrelated-item" href="#">
-			<img class="vrelated-img" src="https://dummyimage.com/320x180/222222/656565.png" alt="Vídeo Related">
-			<h3 class="vrelated-title">[Aula 01] O Mapa e Pulando do Avião - PlayerUnknown's Battlegrounds</h3>
-		</a>
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'video_tag',
+					'field'    => 'slug',
+	                'terms'    => 'rocket-league'
+				)
+			)
+		);
 
-		<a class="vrelated-item" href="#">
-			<img class="vrelated-img" src="https://dummyimage.com/320x180/222222/656565.png" alt="Vídeo Related">
-			<h3 class="vrelated-title">[Aula 01] O Mapa e Pulando do Avião - PlayerUnknown's Battlegrounds</h3>
-		</a>
+		// The Query
+		$query = new WP_Query( $args );
+	?>
 
-		<a class="vrelated-item" href="#">
-			<img class="vrelated-img" src="https://dummyimage.com/320x180/222222/656565.png" alt="Vídeo Related">
-			<h3 class="vrelated-title">[Aula 01] O Mapa e Pulando do Avião - PlayerUnknown's Battlegrounds</h3>
-		</a>
-
-		<a class="vrelated-item" href="#">
-			<img class="vrelated-img" src="https://dummyimage.com/320x180/222222/656565.png" alt="Vídeo Related">
-			<h3 class="vrelated-title">[Aula 01] O Mapa e Pulando do Avião - PlayerUnknown's Battlegrounds</h3>
-		</a>
-
-		<a class="vrelated-item" href="#">
-			<img class="vrelated-img" src="https://dummyimage.com/320x180/222222/656565.png" alt="Vídeo Related">
-			<h3 class="vrelated-title">[Aula 01] O Mapa e Pulando do Avião - PlayerUnknown's Battlegrounds</h3>
-		</a>
-
-		<a class="vrelated-item" href="#">
-			<img class="vrelated-img" src="https://dummyimage.com/320x180/222222/656565.png" alt="Vídeo Related">
-			<h3 class="vrelated-title">[Aula 01] O Mapa e Pulando do Avião - PlayerUnknown's Battlegrounds</h3>
-		</a>
-	</div><!-- vrelated -->
+	<?php if ( $query->have_posts() ): ?>
+		<div class="vrelated">
+			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+				<a class="vrelated-item" href="<?php the_permalink(); ?>">
+					<img class="vrelated-img" src="<?php the_post_thumbnail_url( 'thumbnail' ); ?>" alt="<?php the_title(); ?>">
+					<h2 class="gallery-caption"></h2>
+					<h3 class="vrelated-title"><?php the_title(); ?></h3>
+				</a>
+			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
+		</div><!-- vrelated -->
+	<?php endif; ?>
 </div>
 
 <?php get_footer(); ?>
