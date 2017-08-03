@@ -111,12 +111,12 @@
 .sub-menu {
     visibility: hidden;
     opacity: 0;
-    transition: all 0.2s;
     position: absolute;
     z-index: 1;
     width: 240px;
     background: #191919;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+    transition: all .2s;
 
     a {
         display: block;

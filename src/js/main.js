@@ -7,19 +7,21 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
-    // Toggle menu.
-    $('.navbar-toggle').on('click', function(e){
-        e.preventDefault();
-        $(this).toggleClass('active');
-        $('.menu').toggleClass('active');
-    });
+    if ( window.matchMedia('(max-width: 768px)').matches ) {
+        // Toggle menu.
+        $('.navbar-toggle').on('click', function(e){
+            e.preventDefault();
+            $(this).toggleClass('active');
+            $('.menu').toggleClass('active');
+        });
 
-    // Toggle submenu.
-    $('.menu-item-has-children > a').on('click', function(e){
-        e.preventDefault();
-        $(this).parent().find('.sub-menu').toggleClass('active');
-        $(this).parent().toggleClass('active');
-    });
+        // Toggle submenu.
+        $('.menu-item-has-children > a').on('click', function(e){
+            e.preventDefault();
+            $(this).parent().find('.sub-menu').toggleClass('active');
+            $(this).parent().toggleClass('active');
+        });
+    }
 
 
     // Slick Slider
