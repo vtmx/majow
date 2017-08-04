@@ -1,7 +1,104 @@
+// display
+
+.df {
+	display: flex;
+}
+
+.db {
+	display: block;
+}
+
+.dib {
+	display: inline-block;
+}
+
+.di {
+	display: inline;
+}
+
+.dn {
+	display: none;
+}
+
+// margin
+
+.m {
+	margin: 16px;
+}
+
+.mt {
+	margin-top: 16px;
+}
+
+.mr {
+	margin-right: 16px;
+}
+
+.mb {
+	margin-bottom: 16px;
+}
+
+.ml {
+	margin-left: 16px;
+}
+
+// padding
+
 .p {
 	padding: 16px;
 }
 
-.m {
-	padding: 16px;
+.pt {
+	padding-top: 16px;
+}
+
+.pr {
+	padding-right: 16px;
+}
+
+.pb {
+	padding-bottom: 16px;
+}
+
+.pl {
+	padding-left: 16px;
+}
+
+// align
+
+.tl {
+	text-align: left;
+}
+
+.tc {
+	text-align: center;
+}
+
+.tr {
+	text-align: right;
+}
+
+// text
+
+.tu {
+	text-transform: uppercase;
+}
+
+.fl {
+	font-size: 18px;
+}
+
+.fxlarge {
+	font-size: 24px;
+}
+
+.fxxlarge {
+	font-size: 30px;
+}
+
+// clearfix
+
+.clearfix::after, .clearfix::before {
+	content: '';
+	display: table;
 }

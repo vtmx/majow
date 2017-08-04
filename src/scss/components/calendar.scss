@@ -1,0 +1,67 @@
+.calendar {
+    width: calc(100% - 32px);
+    border: none;
+    box-shadow: none;
+
+    caption {
+        margin: 8px 0 24px 0;
+        color: #eee;
+
+        h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        div {
+            font-size: 24px;
+        }
+    }
+
+    tr:hover {
+        background: none;
+        box-shadow: none;
+    }
+
+    th {
+        padding: 16px;
+    }
+
+    td {
+        padding: 0;
+        width: 14%;
+        height: 150px;
+    }
+
+    .day, .events {
+        padding: 8px;
+    }
+
+    .day {
+        margin: 0;
+        background: #3f5161;
+        border-bottom: 1px solid #222;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .day.disable {
+        background: #2a3640;
+    }
+
+    .day::after {
+        content: '\0000a0';
+    }
+
+    .events {
+        // list-style: square;
+        // padding-left: 16px;
+        font-size: 13px;
+    }
+
+    li {
+        margin-bottom: 4px;
+        padding-bottom: 8px;
+        border-bottom: 1px dotted #2c3033;
+    }
+}

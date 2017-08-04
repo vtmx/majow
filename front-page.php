@@ -29,7 +29,6 @@
 	$args = array(
 		'post_type'      => 'videos',
 		'orderby'        => 'date',
-		'order'          => 'ASC',
 		'posts_per_page' => 8
 	);
 

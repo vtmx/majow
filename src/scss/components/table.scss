@@ -1,7 +1,7 @@
 table {
     width: 100%;
     height: auto !important;
-    margin-bottom: 16px;
+    margin: 0 auto;
     border-collapse: collapse;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
     border-bottom: 2px solid $color-primary;
@@ -9,6 +9,10 @@ table {
     span {
         color: #f9a573;
     }
+}
+
+caption {
+    margin-bottom: 16px;
 }
 
 tr {
@@ -29,6 +33,7 @@ tr:hover {
 td, th {
     padding: 8px;
     border: 1px solid #191919;
+    vertical-align: top;
 }
 
 th {

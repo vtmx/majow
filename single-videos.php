@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="video-grid p">
+<div class="video-grid">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="video">
