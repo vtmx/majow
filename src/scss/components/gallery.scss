@@ -32,15 +32,14 @@
 	}
 
 	.gallery-link::after {
-		content: 'play_arrow';
+		content: 'add';
 		top: calc(50% - 40px);
 		font: 80px 'Material Icons', Roboto, sans-serif;
 		text-align: center;
-
 	}
 
 	.gallery-link:hover::after {
-		color: rgba(255, 255, 255, .5);
+		color: rgba(255, 255, 255, .8);
 	}
 
 	.gallery-caption {

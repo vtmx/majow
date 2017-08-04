@@ -1,27 +1,30 @@
 <?php get_header(); ?>
 
-<?php
-	$slide_img = array(	get_field('home-slide-img-1'), get_field('home-slide-img-2'), get_field('home-slide-img-3') );
-	$slide_link = array( get_field('home-slide-link-1'), get_field('home-slide-link-2'), get_field('home-slide-link-3') );
-?>
+<?php // Get repeater field home-slide  ?>
+<?php $slide = get_field( 'home-slide' ); ?>
 
-<?php if ( $slide_img[0] && $slide_link[0] ): ?>
+<?php if ( have_rows( 'home-slide' ) ): ?>
 	<div class="slide">
 		<div class="slide-container">
-			<?php for ( $i = 0; $i < count($slide_img); $i++ ): ?>
-				<?php if ( $slide_img[$i] && $slide_link[$i] ): ?>
+			<?php while( have_rows( 'home-slide') ): the_row(); ?>
+
+				<?php // Get vars ?>
+				<?php $slide_img = get_sub_field('home-slide-img'); ?>
+				<?php $slide_link = get_sub_field('home-slide-link'); ?>
+
+				<?php if ( $slide_img ): ?>
 					<div class="slide-item">
-						<a href="<?php echo $slide_link[$i]; ?>"><img src="<?php echo $slide_img[$i]['url']; ?>" alt="<?php echo $slide_img[$i]['alt']; ?>"></a>
+						<a href="<?php echo $slide_link; ?>"><img src="<?php echo $slide_img['url'];  ?>" alt="<?php echo $slide_img['url']; ?>"></a>
 					</div>
 				<?php endif; ?>
-			<?php endfor; ?>
-		</div>
+
+			<?php endwhile; ?>
+		</div><!-- slide-container -->
 
 		<div class="slide-arrows"></div>
 		<div class="slide-dots"></div>
 	</div><!-- .slide -->
 <?php endif; ?>
-
 
 <?php
 	// WP_Query arguments

@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
@@ -968,12 +968,12 @@ p {
     -o-transition: none;
     transition: none; }
   .gallery .gallery-link::after {
-    content: 'play_arrow';
+    content: 'add';
     top: calc(50% - 40px);
     font: 80px 'Material Icons', Roboto, sans-serif;
     text-align: center; }
   .gallery .gallery-link:hover::after {
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(255, 255, 255, 0.8); }
   .gallery .gallery-caption {
     content: 'icon';
     visibility: hidden;
@@ -1037,6 +1037,14 @@ p {
       background: rgba(0, 0, 0, 0.3); }
     .slide .slide-arrows button:active {
       background: rgba(0, 0, 0, 0.5); }
+    .slide .slide-arrows button i {
+      -webkit-transition: all .1s;
+      -o-transition: all .1s;
+      transition: all .1s; }
+    .slide .slide-arrows button:active i {
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8); }
   .slide .slide-dots ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1063,7 +1071,14 @@ p {
     background: #eee;
     border: none;
     border-radius: 10%;
-    color: transparent; }
+    color: transparent;
+    -webkit-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s; }
+    .slide .slide-dots button:active {
+      -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      transform: scale(0.7); }
 
 @media (max-width: 1168px) {
   .slide {
