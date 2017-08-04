@@ -8,7 +8,7 @@
 			<?php foreach( $terms as $term ) {} ?>
 			<?php $tax = $term->slug; ?>
 
-			<div class="video-frame">
+			<div class="video-frame mb">
 				<iframe
 					<?php if ( $tax == 'youtube' ): ?>
 						src="https://www.youtube.com/embed/<?php the_field('video-id'); ?>"
@@ -23,14 +23,21 @@
 				</iframe>
 			</div>
 
-			<div class="video-info">
+			<div class="video-info ml mb">
 				<h2 class="video-title"><?php the_title(); ?></h2>
 				<div class="video-description"><?php the_content(''); ?></div>
 			</div>
 		</div><!-- .video -->
 	<?php endwhile; ?>
 
+
 	<?php
+		// Get array of terms
+		$terms = get_the_terms( $post->ID , 'games' );
+
+		// Pluck out the IDs to get an array of IDS
+		$term_ids = wp_list_pluck( $terms, 'term_id' );
+
 		// WP_Query arguments
 		$args = array(
 			'post_type'      => 'videos',
@@ -41,9 +48,9 @@
 
 			'tax_query' => array(
 				array(
-					'taxonomy' => 'video_tag',
-					'field'    => 'slug',
-	                'terms'    => 'rocket-league'
+					'taxonomy' => 'games',
+			        'field'    => 'term_id',
+			        'terms'    => $term_ids
 				)
 			)
 		);

@@ -22,24 +22,68 @@
 
 // margin
 
+.ma {
+	margin: 0 auto;
+}
+
 .m {
 	margin: 16px;
+}
+
+.m-small {
+	margin: 8px;
+}
+
+.m-large {
+	margin: 32px;
 }
 
 .mt {
 	margin-top: 16px;
 }
 
+.mt-small {
+	margin-top: 8px;
+}
+
+.mt-large {
+	margin-top: 32px;
+}
+
 .mr {
 	margin-right: 16px;
+}
+
+.mr-small {
+	margin-right: 8px;
+}
+
+.mr-large {
+	margin-right: 32px;
 }
 
 .mb {
 	margin-bottom: 16px;
 }
 
+.mb-small {
+	margin-bottom: 32px;
+}
+
+.mb-large {
+	margin-bottom: 32px;
+}
+
 .ml {
 	margin-left: 16px;
+}
+
+.ml-small {
+	margin-left: 8px;
+}
+
+.ml-large {
+	margin-left: 32px;
 }
 
 // padding
@@ -52,48 +96,84 @@
 	padding-top: 16px;
 }
 
+.pt-small {
+	padding-top: 8px;
+}
+
+.pt-large {
+	padding-top: 32px;
+}
+
 .pr {
 	padding-right: 16px;
+}
+
+.pr-small {
+	padding-right: 8px;
+}
+
+.pr-large {
+	padding-right: 32px;
 }
 
 .pb {
 	padding-bottom: 16px;
 }
 
+.pb-small {
+	padding-bottom: 8px;
+}
+
+.pb-large {
+	padding-bottom: 32px;
+}
+
 .pl {
 	padding-left: 16px;
 }
 
-// align
-
-.tl {
-	text-align: left;
+.pl-small {
+	padding-left: 8px;
 }
 
-.tc {
-	text-align: center;
+.pl-large {
+	padding-left: 32px;
 }
 
-.tr {
-	text-align: right;
+// font
+
+.fs-large {
+	font-size: 18px;
+}
+
+.fs-xlarge {
+	font-size: 24px;
+}
+
+.fs-xxlarge {
+	font-size: 30px;
 }
 
 // text
 
+.tal {
+	text-align: left;
+}
+
+.tac {
+	text-align: center;
+}
+
+.tar {
+	text-align: right;
+}
+
+.taj {
+	text-align: justify;
+}
+
 .tu {
 	text-transform: uppercase;
-}
-
-.fl {
-	font-size: 18px;
-}
-
-.fxlarge {
-	font-size: 24px;
-}
-
-.fxxlarge {
-	font-size: 30px;
 }
 
 // clearfix

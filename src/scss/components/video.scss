@@ -20,7 +20,6 @@
 
 	.video-info {
 		overflow: hidden;
-		margin: 0;
 		padding: 16px 16px 0 16px;
 		background: #111;
 	}
@@ -57,8 +56,8 @@
 		border-bottom: 1px solid #0a0a0a;
 		padding: 8px;
 		background: #111;
-		background: linear-gradient(145deg, #111 0%, #0e0e0e 100%);
-		color: #fff;
+		background: linear-gradient(145deg, #151515 0%, #111 100%);
+		color: #eee;
 
 		&:last-child {
 			border-bottom: 0;
@@ -83,7 +82,6 @@
 
 	.vrelated-title {
 		display: flex;
-		align-items: center;
 		overflow: hidden;
 		height: 68px;
 		margin: 0;

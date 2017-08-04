@@ -17,16 +17,16 @@
 
 
 <?php if ( $query->have_posts() ): ?>
-	<h2 class="align-center mt tu tc fxxlarge">Calendários</h2>
-	<div class="page-calendarios mtb">
+	<h2 class="mt-large mb-large tac tu fs-xxlarge">Calendários</h2>
+	<div class="page-calendarios">
 		<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			<a class="button" href="<?php the_permalink(); ?>"><i class="material-icons">date_range</i> <?php the_title(); ?></a>
 		<?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>
 	</div>
-<?php endif; ?>
 
-<?php include_once( 'pagination.php' ); ?>
+	<?php include_once( 'pagination.php' ); ?>
+<?php endif; ?>
 
 
 <?php get_footer(); ?>

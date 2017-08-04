@@ -1,31 +1,7 @@
-// .pagination {
-// 	display: flex;
-// 	justify-content: center;
-//
-// 	li {
-// 		margin: 0 4px;
-// 	}
-//
-// 	a, .current  {
-// 		display: block;
-// 		padding: 12px 16px;
-// 		background: #191919;
-// 		color: #fff;
-// 	}
-//
-// 	a:hover, .current {
-// 		background: $color-primary;
-// 		color: #eee;
-// 	}
-//
-// 	a:active {
-// 		background: #191919;
-// 	}
-// }
-
 .wp-pagenavi {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 16px;
 
 	a, span {
 		margin: 0 4px;

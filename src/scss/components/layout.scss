@@ -31,7 +31,7 @@
 }
 
 .main {
-	margin-bottom: 16px;
+	margin-bottom: 24px;
 	box-shadow: 0 1px 8px rgba(0, 0, 0, .6);
 }
 
@@ -83,30 +83,10 @@
 	img {
 		margin: 48px 0;
 	}
-
-	h2 {
-		font-size: 24px;
-	}
 }
 
 .page-calendarios {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
-	a {
-		margin: 0 8px 16px;
-		padding: 16px;
-		background: #333;
-		color: #fff;
-
-		&:hover {
-			background: $color-primary;
-			color: #eee;
-		}
-
-		&:active {
-			background: #222;
-		}
-	}
 }

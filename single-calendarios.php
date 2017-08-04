@@ -11,8 +11,8 @@
     }
 ?>
 
-<table class="calendar mt mb">
-    <caption>
+<table class="calendar mb">
+    <caption class="mt-large mb-large">
 		<h2>Calendário</h2>
 		<div><?php the_title(); ?></div>
 	</caption>
@@ -49,5 +49,9 @@
 
     <?php endfor; ?>
 </table>
+
+<div class="tac">
+    <a href="<?php echo esc_url( home_url( '/calendarios' ) ); ?>" class="button"><i class="material-icons">date_range</i> Ver todos os calendários</a>
+</div>
 
 <?php get_footer(); ?>

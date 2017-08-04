@@ -11,7 +11,7 @@
 
 		'tax_query' => array(
 			array(
-				'taxonomy' => 'video_tag',
+				'taxonomy' => 'games',
 				'field'    => 'slug',
                 'terms'    => 'rocket-league'
 			)

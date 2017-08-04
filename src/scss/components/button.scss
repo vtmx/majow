@@ -1,0 +1,19 @@
+// buttons
+
+.button {
+    display: inline-block;
+    padding: 16px;
+    margin: 0 8px 16px;
+    background: #191919;
+    color: #eee;
+
+    &:hover {
+        background: $color-primary;
+        color: #fff;
+    }
+
+    i {
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+}

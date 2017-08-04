@@ -37,4 +37,4 @@
 		</nav>
 	</header><!-- .header -->
 
-	<main id="content" class="main content container translucent clearfix">
+	<main id="content" class="main container translucent clearfix">
