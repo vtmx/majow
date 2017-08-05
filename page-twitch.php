@@ -6,7 +6,7 @@
 		'post_type'      => 'videos',
 		'orderby'        => 'date',
 		'paged'          => $paged,
-		'posts_per_page' => 4,
+		'posts_per_page' => 3,
 
 		'tax_query' => array(
 			array(

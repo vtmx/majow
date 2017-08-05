@@ -1042,9 +1042,9 @@ p {
       -o-transition: all .1s;
       transition: all .1s; }
     .slide .slide-arrows button:active i {
-      -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-      transform: scale(0.8); }
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9); }
   .slide .slide-dots ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1076,9 +1076,9 @@ p {
     -o-transition: all .1s;
     transition: all .1s; }
     .slide .slide-dots button:active {
-      -webkit-transform: scale(0.7);
-      -ms-transform: scale(0.7);
-      transform: scale(0.7); }
+      -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      transform: scale(0.9); }
 
 @media (max-width: 1168px) {
   .slide {
