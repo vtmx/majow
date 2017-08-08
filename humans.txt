@@ -1,0 +1,14 @@
+/* TEAM */
+Your title: Vitor Melo
+Site: vtmx22@gmail.com
+Twitter: your Twitter username.
+Location: Piabetá, Magé, RJ, Brasil.
+
+/* THANKS */
+Name: Majow
+
+/* SITE */
+Last update: 2017/08/08
+Standards: HTML5, CSS3, JavaScript
+Components: Modernizr, Normalize, jQuery, Slick.
+Software: Photoshop, Atom, SublimeText.gi
