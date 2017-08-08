@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.5] - 2017-08-05
+### Fixed
+- Sidebar na página single de vídeo.
+
 ## [0.0.5] - 2017-08-04
 ### Changed
 - Testando ssh.
