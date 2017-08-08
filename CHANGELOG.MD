@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.5] - 2017-08-04
+### Changed
+- Testando ssh.
+
 ## [0.0.4] - 2017-08-04
 ### Changed
 - Um monte de coisa.

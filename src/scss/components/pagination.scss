@@ -1,10 +1,10 @@
 .wp-pagenavi {
 	display: flex;
-	justify-content: center;
-	margin-bottom: 16px;
+	justify-content: center;	
 
 	a, span {
 		margin: 0 4px;
+		margin-bottom: 16px;
 	}
 
 	a, .current  {
@@ -21,5 +21,15 @@
 
 	a:active {
 		background: #191919;
+	}
+}
+
+@media (max-width: 768px) {
+	.wp-pagenavi {
+		flex-wrap: wrap;
+		
+		a, .current {
+			padding: 12px 32px;
+		}
 	}
 }

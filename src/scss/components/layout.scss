@@ -70,6 +70,12 @@
 @media(max-width: 1168px) {
 	body {
 		padding-top: 64px;
+		background: #0e0e0e;
+	}
+
+	.main {
+		margin-bottom: 12px;
+		box-shadow: none;
 	}
 }
 
