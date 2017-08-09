@@ -748,6 +748,8 @@ p {
     justify-content: center;
     width: 40px;
     height: 40px; }
+    .social-links a:hover {
+      background: #555; }
     .social-links a:hover::before {
       color: #eee; }
   .social-links ::before {
