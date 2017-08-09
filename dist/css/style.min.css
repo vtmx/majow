@@ -769,6 +769,14 @@ p {
     content: '\e07e'; }
   .social-links .steam:hover {
     background: #555; }
+  .social-links .discord::before {
+    content: '\e01d'; }
+  .social-links .discord:hover {
+    background: #7289da; }
+  .social-links .twitter::before {
+    content: '\e08d'; }
+  .social-links .twitter:hover {
+    background: #4da7de; }
 
 @media (max-width: 1168px) {
   .social-links {

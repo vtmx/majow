@@ -32,6 +32,8 @@
 			<div class="social-links">
 				<a target="_blank" class="youtube" title="Canal do Majow no Youtube" href="https://www.youtube.com/user/majoraw"></a>
 				<a target="_blank" class="twitch" title="Canal do Majow no Twitch" href="https://www.twitch.tv/majowww"></a>
+				<a target="_blank" class="discord" title="Discord do Majow" href="https://discordapp.com/invite/Majowww"></a>
+				<a target="_blank" class="twitter" title="Twitter" href="https://twitter.com/MajowYoutube"></a>
 				<a target="_blank" class="steam" title="Grupo do Majow na Steam" href="https://steamcommunity.com/groups/majowww"></a>
 			</div>
 		</nav>
