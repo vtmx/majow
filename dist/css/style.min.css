@@ -749,6 +749,7 @@ p {
     width: 40px;
     height: 40px; }
     .social-links a:hover::before {
+      background: #555;
       color: #eee; }
   .social-links ::before {
     font-family: 'Socicon';

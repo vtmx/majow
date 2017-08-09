@@ -157,6 +157,7 @@
         height: 40px;
 
         &:hover::before {
+            background: #555;
             color: #eee;
         }
     }
