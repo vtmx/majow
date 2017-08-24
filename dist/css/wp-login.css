@@ -3,8 +3,8 @@ body {
 }
 
 .login form {
-    background: transparent;
-    padding: 0;
+    background: #0e0e0e;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 .login h1 a {
@@ -22,10 +22,18 @@ body {
     text-align: center;
 }
 
+.login #nav {
+    margin: 16px 0 0;
+}
+
 .login #backtoblog {
     margin: 8px 0 16px 0;
 }
 
-.login label, .login #nav a, .login #backtoblog a {
-    color: #ccc;
+.login label {
+    color: #ddd;
+}
+
+.login #nav a, .login #backtoblog a {
+    color: #999;
 }
