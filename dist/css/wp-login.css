@@ -1,0 +1,31 @@
+body {
+    background: #141414 url("../img/body-pattern.png") fixed center top;
+}
+
+.login form {
+    background: transparent;
+    padding: 0;
+}
+
+.login h1 a {
+    width: 320px;
+    height: 32px;
+    background-size: 320px;
+}
+
+.login h1 a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.login #nav, .login #backtoblog {
+    text-align: center;
+}
+
+.login #backtoblog {
+    margin: 8px 0 16px 0;
+}
+
+.login label, .login #nav a, .login #backtoblog a {
+    color: #ccc;
+}
