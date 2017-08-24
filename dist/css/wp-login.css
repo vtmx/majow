@@ -1,5 +1,6 @@
 body {
     background: #141414 url("../img/body-pattern.png") fixed center top;
+    margin: 0 auto 20px;
 }
 
 .login form {
