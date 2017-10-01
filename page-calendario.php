@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
-    <table class="calendar">
-        <caption>Calendário</caption>
+    <table class="calendar mb">
+        <caption class="mt-large mb-large">
+    		<h2>Calendário</h2>
+    		<div>06/2017</div>
+    	</caption>
 
         <thead>
             <tr>
@@ -27,7 +30,10 @@
                 </td>
                 <td>
                     <div class="day">1</div>
-                    <div class="events">Um evento que já foi a muito tempo.</div>
+                    <div class="events">
+                        <p>Um evento que já foi a muito tempo.</p>
+                        <p>Um evento que já foi a muito tempo.</p>
+                    </div>
                 </td>
                 <td>
                     <div class="day">2</div>

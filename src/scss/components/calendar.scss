@@ -49,7 +49,8 @@
     }
 
     .day.disable {
-        background: #2a3640;
+        background: transparent;
+        border-bottom: none;
     }
 
     .day::after {
@@ -57,18 +58,15 @@
     }
 
     .events {
-        // list-style: square;
-        // padding-left: 16px;
         font-size: 13px;
+        line-height: 1.3;
 
         p, li  {
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
 
         li:last-child {
             margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
         }
     }
 

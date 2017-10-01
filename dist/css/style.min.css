@@ -1193,17 +1193,17 @@ th {
     font-size: 18px;
     color: #fff; }
   .calendar .day.disable {
-    background: #2a3640; }
+    background: transparent;
+    border-bottom: none; }
   .calendar .day::after {
     content: '\0000a0'; }
   .calendar .events {
-    font-size: 13px; }
+    font-size: 13px;
+    line-height: 1.3; }
     .calendar .events p, .calendar .events li {
-      margin-bottom: 8px; }
+      margin-bottom: 4px; }
     .calendar .events li:last-child {
-      margin-bottom: 0;
-      padding-bottom: 0;
-      border-bottom: none; }
+      margin-bottom: 0; }
 
 .sorteios table {
   margin: 0; }
