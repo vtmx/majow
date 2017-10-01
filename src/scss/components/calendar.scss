@@ -40,20 +40,6 @@
         height: 100%;
     }
 
-    td {
-        .blue {
-            background: #3F51B5;
-        }
-
-        .green {
-            background: #009688;
-        }
-
-        .red {
-            background: #F44336;
-        }
-    }
-
     .day {
         margin: 0;
         background: #3f5161;
@@ -75,10 +61,8 @@
         // padding-left: 16px;
         font-size: 13px;
 
-        li {
-            margin-bottom: 4px;
-            padding-bottom: 8px;
-            border-bottom: 1px dotted #2c3033;
+        p, li  {
+            margin-bottom: 8px;
         }
 
         li:last-child {

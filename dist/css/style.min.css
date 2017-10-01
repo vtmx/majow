@@ -1186,12 +1186,6 @@ th {
     color: #fff; }
   .calendar .events {
     height: 100%; }
-  .calendar td .blue {
-    background: #3F51B5; }
-  .calendar td .green {
-    background: #009688; }
-  .calendar td .red {
-    background: #F44336; }
   .calendar .day {
     margin: 0;
     background: #3f5161;
@@ -1204,10 +1198,8 @@ th {
     content: '\0000a0'; }
   .calendar .events {
     font-size: 13px; }
-    .calendar .events li {
-      margin-bottom: 4px;
-      padding-bottom: 8px;
-      border-bottom: 1px dotted #2c3033; }
+    .calendar .events p, .calendar .events li {
+      margin-bottom: 8px; }
     .calendar .events li:last-child {
       margin-bottom: 0;
       padding-bottom: 0;
