@@ -25,7 +25,7 @@
 	<header class="header">
 		<nav class="navbar container">
 			<h1 class="navbar-logo">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/logo-majow.svg" alt="Logo do Majow"></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/dist/img/logo-majowww.svg" alt="Logo do Majow"></a>
 			</h1>
 
 			<button class="navbar-toggle" aria-expanded="false"></button>

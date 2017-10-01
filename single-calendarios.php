@@ -28,7 +28,7 @@
 
                 <?php while( have_rows('calendar-days') ): the_row(); ?>
 					<?php if ( $i == get_sub_field('calendar-day') ): ?>
-						<div class="events">
+						<div class="events" style="background: <?php echo the_sub_field('calendar-color'); ?>">
 							<?php echo the_sub_field('calendar-event'); ?>
 						</div>
 					<?php endif; ?>

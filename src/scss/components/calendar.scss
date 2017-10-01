@@ -32,6 +32,26 @@
 
     .day, .events {
         padding: 8px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+        color: #fff;
+    }
+
+    .events {
+        height: 100%;
+    }
+
+    td {
+        .blue {
+            background: #3F51B5;
+        }
+
+        .green {
+            background: #009688;
+        }
+
+        .red {
+            background: #F44336;
+        }
     }
 
     .day {

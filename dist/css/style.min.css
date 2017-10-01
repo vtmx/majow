@@ -107,6 +107,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -656,8 +657,7 @@ p {
       outline: none;
       background: rgba(0, 0, 0, 0.5); }
   .navbar-logo img {
-    width: 159px;
-    height: 16px; }
+    width: 220px; }
 
 .menu {
   display: -webkit-box;
@@ -1181,7 +1181,17 @@ th {
     width: 14%;
     height: 150px; }
   .calendar .day, .calendar .events {
-    padding: 8px; }
+    padding: 8px;
+    text-shadow: 0 1px 1px black;
+    color: #fff; }
+  .calendar .events {
+    height: 100%; }
+  .calendar td .blue {
+    background: #3F51B5; }
+  .calendar td .green {
+    background: #009688; }
+  .calendar td .red {
+    background: #F44336; }
   .calendar .day {
     margin: 0;
     background: #3f5161;
