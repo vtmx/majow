@@ -1,5 +1,5 @@
-.calendar {
-    width: calc(100% - 32px);
+.calendar, .tribe-events-calendar {
+    //width: calc(100% - 32px);
     border: none;
     box-shadow: none;
 
@@ -21,7 +21,7 @@
     }
 
     th {
-        padding: 16px;
+        padding: 16px !important;
     }
 
     td {
@@ -69,6 +69,4 @@
             margin-bottom: 0;
         }
     }
-
-
 }
