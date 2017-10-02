@@ -1119,6 +1119,10 @@ table {
   border-bottom: 2px solid #e45a00; }
   table span {
     color: #f9a573; }
+  table a {
+    color: #eee; }
+  table a:hover {
+    color: #e45a00; }
 
 caption {
   margin-bottom: 16px; }
@@ -1204,11 +1208,16 @@ th {
     .calendar .events li:last-child, .tribe-events-calendar .events li:last-child {
       margin-bottom: 0; }
 
-.single-tribe_events h2 {
-  display: none; }
-
 .tribe-js #tribe-events-bar, .tribe-js #tribe-events-footer, .tribe-js .tribe-events-button, .tribe-js .tribe-events-event-meta, .tribe-js #tribe-events-header {
   display: none; }
+
+.tribe-js h2, .tribe-js h3, .tribe-js th, .tribe-js dt,
+.tribe-js .tribe-events-back a,
+.tribe-js .tribe-events-button,
+.tribe-js .tribe-events-viewmore,
+.tribe-js #tribe-events .tribe-events-button,
+.tribe-js div[id*=tribe-events-daynum-] {
+  font-weight: normal !important; }
 
 .tribe-js #tribe-events-content {
   margin-bottom: 0 !important; }
@@ -1225,9 +1234,16 @@ th {
 
 .tribe-js .tribe-events-calendar {
   margin: 0 !important; }
+  .tribe-js .tribe-events-calendar td:hover {
+    background: #111;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
   .tribe-js .tribe-events-calendar th {
     text-transform: capitalize !important;
     font-size: 14px !important; }
+  .tribe-js .tribe-events-calendar a {
+    display: block; }
 
 .tribe-js td .type-tribe_events {
   border-bottom: 1px solid #222 !important; }
@@ -1239,13 +1255,6 @@ th {
 
 .tribe-js .events-archive.events-gridview #tribe-events-content table .tribe-events-last {
   margin: 0 !important; }
-
-.tribe-js h2, .tribe-js h3, .tribe-js th, .tribe-js dt,
-.tribe-js .tribe-events-button,
-.tribe-js .tribe-events-back a,
-.tribe-js #tribe-events .tribe-events-button,
-.tribe-js div[id*=tribe-events-daynum-] {
-  font-weight: normal !important; }
 
 .tribe-js .tribe-events-calendar td div[id*=tribe-events-daynum-] {
   font-size: 18px; }
@@ -1267,12 +1276,15 @@ th {
 
 .tribe-js .tribe-events-tooltip {
   padding: 4px !important;
-  bottom: 50px !important; }
+  bottom: 35px !important; }
 
 .tribe-js .tribe-events-back {
   margin-bottom: 16px !important; }
   .tribe-js .tribe-events-back a {
     margin: 0 !important; }
+
+.single-tribe_events h2 {
+  display: none; }
 
 .sorteios table {
   margin: 0; }

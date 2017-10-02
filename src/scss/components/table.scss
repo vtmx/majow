@@ -9,6 +9,14 @@ table {
     span {
         color: #f9a573;
     }
+
+    a {
+        color: #eee;
+    }
+
+    a:hover {
+        color: $color-primary;
+    }
 }
 
 caption {
