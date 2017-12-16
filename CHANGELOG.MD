@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.6] - 2017-12-16
+### Add
+- Page style.
+
 ## [0.0.5] - 2017-08-05
 ### Fixed
 - Sidebar na página single de vídeo.
