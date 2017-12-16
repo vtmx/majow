@@ -831,7 +831,7 @@ p {
     width: 150px;
     height: 64px;
     top: 0;
-    left: 200px; }
+    left: 250px; }
     .social-links a {
       width: 48px;
       height: 48px;
@@ -847,6 +847,9 @@ p {
   max-width: 1168px;
   margin-left: auto;
   margin-right: auto; }
+
+.page p {
+  line-height: 1.5; }
 
 .translucent {
   background: #0e0e0e; }
@@ -944,6 +947,43 @@ p {
   .vrelated {
     margin-bottom: 16px; } }
 
+.main .page {
+  font-size: 16px;
+  padding: 32px; }
+  .main .page table {
+    margin-bottom: 32px;
+    line-height: 1.5; }
+  .main .page h1, .main .page h2, .main .page h3 {
+    margin-bottom: 32px; }
+  .main .page h2 {
+    font-size: 30px; }
+  .main .page h3 {
+    font-size: 24px;
+    margin-bottom: 32px; }
+  .main .page h4 {
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-transform: uppercase; }
+  .main .page p {
+    margin-bottom: 32px; }
+  .main .page ul, .main .page ol {
+    padding-left: 18px;
+    margin-bottom: 48px; }
+  .main .page ul:last-child, .main .page ol:last-child {
+    margin-bottom: 8px; }
+    .main .page ul:last-child li:last-child, .main .page ol:last-child li:last-child {
+      margin-bottom: 0; }
+  .main .page ul {
+    list-style: square; }
+  .main .page li {
+    margin-bottom: 16px; }
+  .main .page .center {
+    text-align: center; }
+  .main .page .aligncenter {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+
 .gallery {
   display: -webkit-box;
   display: -webkit-flex;
@@ -958,7 +998,8 @@ p {
   justify-content: center; }
   .gallery .gallery-link {
     position: relative;
-    max-width: 272px;
+    width: 272px;
+    height: 153px;
     margin: 0 8px 16px 8px;
     line-height: 0; }
   .gallery .gallery-link::before, .gallery .gallery-link::after {
