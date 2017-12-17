@@ -2,7 +2,10 @@
 
 ## [0.0.6] - 2017-12-16
 ### Add
-- Page style.
+- Estilo do conteúdo da página.
+
+### Changed
+- Título da página
 
 ## [0.0.5] - 2017-08-05
 ### Fixed

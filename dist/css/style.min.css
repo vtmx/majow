@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
@@ -956,7 +956,8 @@ p {
   .main .page h1, .main .page h2, .main .page h3 {
     margin-bottom: 32px; }
   .main .page h2 {
-    font-size: 30px; }
+    font-size: 40px;
+    font-weight: 700; }
   .main .page h3 {
     font-size: 24px;
     margin-bottom: 32px; }
@@ -1252,7 +1253,7 @@ th {
 .tribe-js #tribe-events-bar, .tribe-js #tribe-events-footer, .tribe-js .tribe-events-button, .tribe-js .tribe-events-event-meta, .tribe-js #tribe-events-header {
   display: none; }
 
-.tribe-js h2, .tribe-js h3, .tribe-js th, .tribe-js dt,
+.tribe-js h3, .tribe-js th, .tribe-js dt,
 .tribe-js .tribe-events-back a,
 .tribe-js .tribe-events-button,
 .tribe-js .tribe-events-viewmore,
